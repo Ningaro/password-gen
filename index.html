@@ -27,7 +27,7 @@
   </div>
 
   <script>
-  function makeid(length) {
+  function getRandCyr(length) {
    var result           = '';
    var characters       = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя';
    var charactersLength = characters.length;
@@ -48,7 +48,7 @@
   }
   function GenPassword() {
     var lengthLogin = $("#login").val().length;
-    $("#ans").val(makeid(3).toLowerCase()+makeid(2).toUpperCase()+mod100(lengthLogin, false)+mod100(lengthLogin, true))
+    $("#ans").val(getRandCyr(3).toLowerCase()+getRandCyr(2).toUpperCase()+mod100(lengthLogin, false)+mod100(lengthLogin, true))
   }
   // UserIvanIvanov2017 - 18
   </script>
